@@ -9,3 +9,12 @@
 
 GET {{base_url}}/Orders?$expand=Customer&$top=5&{{format}}
 # Response saved in: responses/orders_with_customer.json
+
+### * 2. Get the employees that report to manager “2”.
+
+# Parameters used:
+# - $filter=ReportsTo : Allows to filter Employees that just ReportsTo the specified value, in this case '2'
+# - $select=Fields : It was used just to simplify the response (it was not necessary)
+
+GET {{base_url}}/Employees?$filter=ReportsTo eq 2&$select=EmployeeID,LastName,FirstName,Title,ReportsTo&{{format}}
+# Response saved in: responses/employees_reports_to.json

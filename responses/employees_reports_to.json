@@ -1,0 +1,40 @@
+{
+  "odata.metadata": "https://services.odata.org/Northwind/Northwind.svc/$metadata#Employees&$select=EmployeeID,LastName,FirstName,Title,ReportsTo",
+  "value": [
+    {
+      "EmployeeID": 1,
+      "LastName": "Davolio",
+      "FirstName": "Nancy",
+      "Title": "Sales Representative",
+      "ReportsTo": 2
+    },
+    {
+      "EmployeeID": 3,
+      "LastName": "Leverling",
+      "FirstName": "Janet",
+      "Title": "Sales Representative",
+      "ReportsTo": 2
+    },
+    {
+      "EmployeeID": 4,
+      "LastName": "Peacock",
+      "FirstName": "Margaret",
+      "Title": "Sales Representative",
+      "ReportsTo": 2
+    },
+    {
+      "EmployeeID": 5,
+      "LastName": "Buchanan",
+      "FirstName": "Steven",
+      "Title": "Sales Manager",
+      "ReportsTo": 2
+    },
+    {
+      "EmployeeID": 8,
+      "LastName": "Callahan",
+      "FirstName": "Laura",
+      "Title": "Inside Sales Coordinator",
+      "ReportsTo": 2
+    }
+  ]
+}
