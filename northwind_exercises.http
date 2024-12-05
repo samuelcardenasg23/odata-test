@@ -39,3 +39,12 @@ GET {{base_url}}/Products?$filter=UnitsInStock gt 0&$inlinecount=allpages&{{form
 
 GET {{base_url}}/Products?$filter=UnitsInStock eq 0&$select=ProductName,ProductID&$inlinecount=allpages&{{format}}
 # Response saved in: responses/products_without_stock.json
+
+### * 5. Get the 5 most expensive products
+
+# Parameters used:
+# - $$orderby=UnitPrice desc : Allows to order products by price in descending order (greater to less)
+# - $top=5 : After the products are ordered we can select the 5 most expensive products
+
+GET {{base_url}}/Products?$orderby=UnitPrice desc&$top=5&{{format}}
+# Response saved in: responses/products_most_expensive.json

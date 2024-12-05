@@ -28,3 +28,8 @@
 - **Query**: See `northwind_exercises.http`
 - **Response**: `responses/products_without_stock.json`
 - **Description**: Retrieve Products that are NOT in stock.
+
+### 5. Get the 5 most expensive products
+- **Query**: See `northwind_exercises.http`
+- **Response**: `responses/products_most_expensive.json`
+- **Description**: Retrieve 5 most expensive products.
