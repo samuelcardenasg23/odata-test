@@ -18,3 +18,13 @@
 - **Query**: See `northwind_exercises.http`
 - **Response**: `responses/employees_reports_to.json`
 - **Description**: Retrieve employees that report to the manager 2 in this case.
+
+### 3. Get the products that have stock (inventory).
+- **Query**: See `northwind_exercises.http`
+- **Response**: `responses/products_in_stock.json`
+- **Description**: Retrieve Products that are in stock.
+
+### 4. Get only the names and codes of products that are NOT in stock (inventory).
+- **Query**: See `northwind_exercises.http`
+- **Response**: `responses/products_without_stock.json`
+- **Description**: Retrieve Products that are NOT in stock.

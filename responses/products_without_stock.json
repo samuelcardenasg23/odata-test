@@ -1,0 +1,11 @@
+{
+  "odata.metadata": "https://services.odata.org/Northwind/Northwind.svc/$metadata#Products&$select=ProductName,ProductID",
+  "odata.count": "5",
+  "value": [
+    { "ProductID": 5, "ProductName": "Chef Anton's Gumbo Mix" },
+    { "ProductID": 17, "ProductName": "Alice Mutton" },
+    { "ProductID": 29, "ProductName": "Th\u00fcringer Rostbratwurst" },
+    { "ProductID": 31, "ProductName": "Gorgonzola Telino" },
+    { "ProductID": 53, "ProductName": "Perth Pasties" }
+  ]
+}

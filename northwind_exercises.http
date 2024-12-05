@@ -18,3 +18,24 @@ GET {{base_url}}/Orders?$expand=Customer&$top=5&{{format}}
 
 GET {{base_url}}/Employees?$filter=ReportsTo eq 2&$select=EmployeeID,LastName,FirstName,Title,ReportsTo&{{format}}
 # Response saved in: responses/employees_reports_to.json
+
+### * 3. Get the products that have stock (inventory).
+
+# Parameters used:
+# - $filter=UnitsInStock : Allows to filter Products that have stock (greater than 0)
+# - $inlinecount=allpages : Optional but used to know the exact count of products in stock because of the pagination used by the API.
+# this means that there are 72 products that are in stock.
+
+GET {{base_url}}/Products?$filter=UnitsInStock gt 0&$inlinecount=allpages&{{format}}
+# Response saved in: responses/products_in_stock.json
+
+### * 4. Get only the names and codes of products that are NOT in stock (inventory).
+
+# Parameters used:
+# - $filter=UnitsInStock : Allows to filter Products that do NOT have stock (equal to 0)
+# - $select=ProductName,ProductID : Used to select just the fields we require.
+# - $inlinecount=allpages : Optional but used to know the exact count of products that do NOT have stock because of the pagination used by the API.
+# this means that there are 5 products do NOt have stock.
+
+GET {{base_url}}/Products?$filter=UnitsInStock eq 0&$select=ProductName,ProductID&$inlinecount=allpages&{{format}}
+# Response saved in: responses/products_without_stock.json
