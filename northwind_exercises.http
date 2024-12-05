@@ -1,0 +1,11 @@
+@base_url = https://services.odata.org/northwind/northwind.svc
+@format = $format=json
+
+### * 1. Get Orders with Customer Details
+
+# Parameters used:
+# - $expand=Customer : Includes the full customer details for each order
+# - $top=5 : Limits the response to first 5 records because the response is too big
+
+GET {{base_url}}/Orders?$expand=Customer&$top=5&{{format}}
+# Response saved in: responses/orders_with_customer.json
