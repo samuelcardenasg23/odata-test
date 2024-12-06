@@ -43,3 +43,9 @@
 - **Query**: See `northwind_exercises.http`
 - **Response**: `responses/products_in_beverages_category.json`
 - **Description**: Retrieve the products in the "Beverages" category with just the product name and the price.
+
+## Docs
+- https://www.odata.org/getting-started/
+- https://www.odata.org/getting-started/basic-tutorial/#count
+- https://www.odata.org/getting-started/advanced-tutorial/
+- https://www.odata.org/documentation/odata-version-2-0/uri-conventions/#InlinecountSystemQueryOption%28$inlinecount%29
