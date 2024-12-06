@@ -1,0 +1,17 @@
+{
+  "odata.metadata": "https://services.odata.org/Northwind/Northwind.svc/$metadata#Products&$select=ProductName,UnitPrice",
+  "value": [
+    { "ProductName": "Chai", "UnitPrice": "18.0000" },
+    { "ProductName": "Chang", "UnitPrice": "19.0000" },
+    { "ProductName": "Guaran\u00e1 Fant\u00e1stica", "UnitPrice": "4.5000" },
+    { "ProductName": "Sasquatch Ale", "UnitPrice": "14.0000" },
+    { "ProductName": "Steeleye Stout", "UnitPrice": "18.0000" },
+    { "ProductName": "C\u00f4te de Blaye", "UnitPrice": "263.5000" },
+    { "ProductName": "Chartreuse verte", "UnitPrice": "18.0000" },
+    { "ProductName": "Ipoh Coffee", "UnitPrice": "46.0000" },
+    { "ProductName": "Laughing Lumberjack Lager", "UnitPrice": "14.0000" },
+    { "ProductName": "Outback Lager", "UnitPrice": "15.0000" },
+    { "ProductName": "Rh\u00f6nbr\u00e4u Klosterbier", "UnitPrice": "7.7500" },
+    { "ProductName": "Lakkalik\u00f6\u00f6ri", "UnitPrice": "18.0000" }
+  ]
+}

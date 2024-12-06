@@ -38,3 +38,8 @@
 - **Query**: See `northwind_exercises.http`
 - **Response**: `responses/order_germany.json`
 - **Description**: Retrieve the orders that were sent to Germany.
+
+### 7. Get only the names and prices of the products in the "Beverages" category
+- **Query**: See `northwind_exercises.http`
+- **Response**: `responses/products_in_beverages_category.json`
+- **Description**: Retrieve the products in the "Beverages" category with just the product name and the price.

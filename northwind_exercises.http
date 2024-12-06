@@ -55,3 +55,12 @@ GET {{base_url}}/Products?$orderby=UnitPrice desc&$top=5&{{format}}
 # - $filter=ShipCountry : Allows to filter orders by ship country = germany
 GET {{base_url}}/Orders?$filter=ShipCountry eq 'Germany'&{{format}}
 # Response saved in: responses/order_germany.json
+
+### * 7. Get only the names and prices of the products in the "Beverages" category
+# Parameters used:
+# - $expand=Category : Includes the category details
+# - $filter=Category/CategoryName : Filters by the expanded category name
+# - $select : Selects only the product name and price fields
+
+GET {{base_url}}/Products?$expand=Category&$filter=Category/CategoryName eq 'Beverages'&$select=ProductName,UnitPrice&{{format}}
+# Response saved in: responses/products_in_beverages_category.json
