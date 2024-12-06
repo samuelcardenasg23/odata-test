@@ -33,3 +33,8 @@
 - **Query**: See `northwind_exercises.http`
 - **Response**: `responses/products_most_expensive.json`
 - **Description**: Retrieve 5 most expensive products.
+
+### 6. Find the orders that were sent to “Germany”.
+- **Query**: See `northwind_exercises.http`
+- **Response**: `responses/order_germany.json`
+- **Description**: Retrieve the orders that were sent to Germany.

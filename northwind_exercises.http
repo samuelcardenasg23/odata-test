@@ -43,8 +43,15 @@ GET {{base_url}}/Products?$filter=UnitsInStock eq 0&$select=ProductName,ProductI
 ### * 5. Get the 5 most expensive products
 
 # Parameters used:
-# - $$orderby=UnitPrice desc : Allows to order products by price in descending order (greater to less)
+# - $orderby=UnitPrice desc : Allows to order products by price in descending order (greater to less)
 # - $top=5 : After the products are ordered we can select the 5 most expensive products
 
 GET {{base_url}}/Products?$orderby=UnitPrice desc&$top=5&{{format}}
 # Response saved in: responses/products_most_expensive.json
+
+### * 6. Find the orders that were sent to “Germany”.
+
+# Parameters used:
+# - $filter=ShipCountry : Allows to filter orders by ship country = germany
+GET {{base_url}}/Orders?$filter=ShipCountry eq 'Germany'&{{format}}
+# Response saved in: responses/order_germany.json
